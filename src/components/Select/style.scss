@@ -1,0 +1,67 @@
+
+.css-1w7gl0u-Input {
+  width: 100% !important;
+}
+
+.select__value-container {
+  font-size: 16px !important;
+}
+
+.SelectTreeView {
+
+  .dropdown-wrapper {
+    position: relative;
+
+    .dropdown-block {
+      background-color: #fff;
+      border: 1px solid rgba(192, 192, 192, 0.486);
+      position: absolute;
+      top: 8px;
+      left: 0;
+      min-width: 100%;
+      border-radius: 5px;
+      padding: 10px 0;
+      max-height: 300px;
+      overflow: auto;
+      z-index: 10;
+
+      .list-element {
+        padding: 10px 15px;
+        cursor: pointer;
+        border-left: 4px solid rgba(192, 192, 192, 0.144);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.active {
+          background-color: #4382f7;
+          color: #fff;
+
+          &:hover {
+            background-color: #4382f7;
+          }
+        }
+
+        .icon {
+          transition-duration: 0.3s;
+
+          &.open {
+            transform: rotate(180deg);
+          }
+        }
+        
+        &:hover {
+          background-color: rgba(224, 235, 253, 1);
+        }
+
+      }
+
+      .child-block {
+        padding-left: 40px;
+        // border-bottom: 1px solid rgba(192, 192, 192, 0.144);
+      }
+
+
+    }
+  }
+}
